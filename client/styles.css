@@ -890,6 +890,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  flex: 1;
 }
 .popular-heading {
   display: flex;
@@ -968,6 +969,7 @@ body {
   text-decoration: none;
   font-size: 16px;
   color: var(--gray-color);
+  text-underline-offset: 3px;
 }
 .popular-price {
   font-size: 16px;
@@ -999,4 +1001,32 @@ body {
 
 .popular-card--container:hover .card-des-link {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 950px) {
+
+.popular-card--container {
+  min-width: 40%;
+ 
+}
+}
+
+@media screen and (max-width: 768px) {
+
+#most-popular--section {
+  padding: 30px 30px;
+}
+.popular-card--container {
+  min-width: 40%; 
+}
+}
+@media screen and (max-width: 520px) {
+.popular-card--container {
+  min-width: 60%; 
+}
+}
+@media screen and (max-width: 459px) {
+.popular-card--container {
+  min-width: 100%; 
+}
 }
