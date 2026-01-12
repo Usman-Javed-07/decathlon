@@ -10,7 +10,7 @@
   --secondary-color: #3643ba;
   --text-color: #0000009c;
   --button-color: #ffcd4e;
-  --gray-color:#707070;
+  --gray-color:#818181;
 }
 body {
   max-width: 1600px;
@@ -843,4 +843,160 @@ body {
 #shop-and-sport {
   padding: 10px 30px;
 }
+}
+
+#most-popular--section {
+  background-image: url("./assets/images/Mountains.webp");
+   background-size: cover;
+  background-position:center;
+  width: 100%;
+  height: auto;
+  max-width: 1600px;
+  padding: 200px 100px;
+  color: #fff;
+  gap: 20px;
+  font-size: 18px;
+}
+.popuar-cards {
+  margin-top: 8%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  gap: 10px;
+  -ms-overflow-style: none; 
+}
+.popular-card--container {
+  padding: 20px;
+  background-color: #fff;
+  width: 32.6%;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  min-width: 32.6%;
+  scrollbar-width: none;   
+  cursor: pointer;
+ 
+}
+.popuar-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.jackets-colors--selection {
+  display: flex;
+  gap: 5px;
+}
+.popular-heading--rating {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.popular-heading {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.view-all {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.popular-heading a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px !important;
+}
+.popular-card--image {
+  overflow: hidden;
+}
+.popular-card--image img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.color-1 ,.color-2 ,.color-3 ,.color-4{
+  padding: 10px 10px;
+  width: 3%;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+.color-1 {
+  background-color: rgb(4, 4, 73);
+}
+.color-2 {
+  background-color: rgb(155 166 57);
+}
+.color-3 {
+  background-color: rgb(139 67 44);
+}
+.color-4 {
+  background-color: #000;
+}
+.popular-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+
+}
+.popular-heading p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.popular-ratings {
+ font-size: 12px;
+ font-weight: 600;
+ color: var(--gray-color);
+}
+.popular-ratings i {
+  color: var(--secondary-color);
+  font-size: 9px;
+}
+.rating-star{
+  color: var(--secondary-color);
+}
+.card-des-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--gray-color);
+}
+.popular-price {
+  font-size: 16px;
+  color: var(--primary-color);
+  margin-bottom: 8%;
+}
+.popular-button {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #f6f6f6;
+  background-color: var(--secondary-color);
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+   margin-top: auto;
+}
+.morecolor-jackets {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.popular-card--container:hover .popular-card--image img {
+  transform: scale(1.1);
+}
+
+.popular-card--container:hover .card-des-link {
+  text-decoration: underline;
 }
