@@ -340,6 +340,38 @@ body {
   }
 }
 
+@media screen and (max-width: 920px) {
+  .categories {
+    padding: 15px 0;
+    overflow: hidden;
+  }
+
+  .categories-items {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 0 20px;
+    gap: 30px;
+    white-space: nowrap;
+  }
+
+  .categories-items::-webkit-scrollbar {
+    display: none;
+  }
+
+  .categories-items li {
+    flex-shrink: 0;
+  }
+
+  .categories-items li a {
+    display: inline-block;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .slogan p {
     font-size: 12px;
@@ -660,6 +692,9 @@ body {
   .banner h1 {
     font-size: 40px;
   }
+  .banner i {
+    font-size: 18px;
+  }
   
 }
 
@@ -725,23 +760,73 @@ body {
  }
 }
 @media screen and (max-width:1000px) {
-   .shop-sport {
-  flex-direction: row;
-  overflow-x: scroll;
+  #shop-and-sport {
+    padding: 30px 0;
+    overflow: hidden;
+  }
 
- } 
- .shop {
-  flex-direction: row;
- }
- .hicking-backpack--snow {
-  display: flex;
-  gap: 100px;
- }
- .camp-run {
-  display: flex;
-  gap: 100px;
-  margin-left: 100px;
- }
+  .shop-sport {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 0 20px;
+    gap: 0;
+  }
+
+  .shop-sport::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hicking-backpack--snow {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-shrink: 0;
+    padding-right: 40px;
+  }
+
+  .camp-run {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-shrink: 0;
+    margin-left: 0;
+  }
+
+  .shop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: auto;
+  }
+
+  .shop-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .shop h3 {
+    font-size: 28px;
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  .shop img {
+    width: 100px;
+    height: auto;
+  }
+
+  .avif {
+    width: 50px !important;
+  }
 }
 
 @media screen and (max-width:768px) {
