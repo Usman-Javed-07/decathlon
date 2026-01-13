@@ -8,7 +8,7 @@
 :root {
   --primary-color: #101010dc;
   --secondary-color: #3643ba;
-  --text-color: #0000009c;
+  --text-color: #000000cb;
   --button-color: #ffcd4e;
   --gray-color:#818181;
 }
@@ -1028,5 +1028,68 @@ body {
 @media screen and (max-width: 459px) {
 .popular-card--container {
   min-width: 100%; 
+}
+}
+
+/* performance section */
+
+#performance-section {
+  padding: 50px 100px;
+}
+.performance {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: space-between;
+  text-align: center;
+}
+.performaceleft-image img {
+  width: 250px;
+  height: 370px;
+}
+.performaceright-image img {
+   width: 330px;
+  height: 230px;
+  margin-top: 42%;
+
+}
+.performance-details h1 {
+  font-size: 70px;
+  margin-bottom: 5%;
+}
+
+.performance-details p {
+  font-size: 22px;
+  color: var(--text-color);
+}
+
+@media screen and (max-width:1250px) {
+  .performance {
+    flex-direction: column;
+  }
+  .performaceright-image img {
+  margin-top: 2%;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.performaceleft-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+}
+
+@media screen and (max-width:768px) {
+  #performance-section {
+    padding: 30px 30px;
+  }
+}
+
+
+@media screen and (max-width:500px) {
+ .performance-details h1 {
+  font-size: 30px;
+  margin-bottom: 5%;
 }
 }
